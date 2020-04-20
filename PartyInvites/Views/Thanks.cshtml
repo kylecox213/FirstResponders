@@ -1,0 +1,15 @@
+﻿@model GuestResponse
+
+<div class="text-center m-3">
+	<h1>Thank you, @Model.Name!</h1>
+	@if (Model.WillAttend == true) {
+		<div>
+			That's great! BYOB DBAA!
+		</div>
+	} else {
+		<div>
+			Well then guess what! We aint friends no more	
+		</div>
+	}
+	Click <a asp-action="ListResponses">here</a> to see who is coming the PAAAAR-TAAAAY!!
+</div>
